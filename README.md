@@ -19,7 +19,7 @@ and some other very basic gameplay elements.
 
 ### Installing
 
-Clone the repository, make bonus and then run the executable file with the choice of your map in /map folder.
+Clone the repository, make a bonus, and then run the executable file with the choice of your map in /map folder.
 
 
 
@@ -31,10 +31,10 @@ Clone the repository, make bonus and then run the executable file with the choic
 ```
 
 # So_Long Guide
-In this guide, I would be mainly focusing on creating the game logics, animations and how you can achieve anything using MiniLibX
+In this guide, I will be mainly focusing on creating the game logic, animations and how you can achieve anything using MiniLibX
 
 ## Understanding MiniLibX
-The best place to start would be [MiniLibX Docs](https://harm-smits.github.io/42docs/libs/minilibx), It can be very intimidating at first, but believe me you this tool is a wonder !
+The best place to start would be [MiniLibX Docs](https://harm-smits.github.io/42docs/libs/minilibx), It can be very intimidating at first, but believe me, this tool is a wonder!
 
 Refer to the following sections while going through the **MiniLibX Docs**
 
@@ -45,16 +45,16 @@ Refer to the following sections while going through the **MiniLibX Docs**
 
 * Create a new C program and try initializing MLX and a window
 
-* The part where you create a new image using **mlx_new_image()** is not necessary, as per my eperience you will never be using it. Instead use **mlx_pixel_put()** to understand how you have control over the MLX window
+* The part where you create a new image using **mlx_new_image()** is not necessary, as per my experience you will never be using it. Instead use **mlx_pixel_put()** to understand how you have control over the MLX window
 
-* Concepts of **colors, little endian and big endian** were also not used in my project, only intitial testing and understanding of MLX involved **colors**.
+* Concepts of **colors, little endian, and big-endian** were also not used in my project, only initial testing and understanding of MLX involved **colors**.
 
-* Your key takeaway from the Getting Started page of MiniLibX would be to succesfully understand the initialization of MLX and how you can control the graphics
+* Your key takeaway from the Getting Started page of MiniLibX would be to successfully understand the initialization of MLX and how you can control the graphics
 
 #### Pixelput Project (Understanding Graphics)
 This project will give you a very simple and easy idea about how you render images onto the MLX Window
 
-The MLX window assigns the position of each pixel using X and Y position starting from the top left corner
+The MLX window assigns the position of each pixel using the X and Y positions starting from the top left corner
 
 ![VISUAL_REPRESENTATION]()
 
@@ -78,22 +78,22 @@ The MLX window assigns the position of each pixel using X and Y position startin
         }
     }
 
-The above code simply goes through a loop and renders 1 pixel everytime with different X and Y position, resulting in a simple square in your Window 
+The above code simply goes through a loop and renders 1 pixel every time with different X and Y positions, resulting in a simple square in your Window 
 
 ![VISUAL_REPRESENTATION]()
 
-Now that you're aware of how you have access to each and every pixel in your window lets go ahead and see how you can interact with your window
+Now that you're aware of how you have access to each and every pixel in your window let's go ahead and see how you can interact with your window
 
-*The next section in the MiniLibX Docs about color will not be used, however its your choice to experiement on that, but I would suggest not to spend alot of time on that section*
+*The next section in the MiniLibX Docs about color will not be used, however it's your choice to experiment on that, but I would suggest not spending a lot of time on that section*
 
 
 ### Loops, Hooks and Events
 
 #### Loops
-Loop refers to the infinite loop that goes on infinitely throughout your program. **mlx_loop()** is the perfect example, it keeps your program running infinitly unless **exit()** is initiated  
+Loop refers to the infinite loop that goes on infinitely throughout your program. **mlx_loop()** is the perfect example, it keeps your program running infinitely unless **exit()** is initiated  
 
 #### Hooks 
-Hooks look for your input that you pass through the program, through your mouse or keyboard. MiniLibx has different functions for each input device. However the best way would be to use **mlx_hook()** and then assign events as per prototype. You'll learn about this more in a while.
+Hooks look for the input that you pass through the program, through your mouse or keyboard. MiniLibx has different functions for each input device. However, the best way would be to use **mlx_hook()** and then assign events as per the prototype. You'll learn about this more in a while.
 
 #### Events
 
@@ -108,11 +108,11 @@ Integrating inputs are little tricky, there are certain rules you have to go thr
 The above is a simplified prototype of **mlx_hook**
 * **Mlx and win** refer to the pointers
 
-* **Key** refers to the input key that you want your program to be looking for (refer to table below)
+* **Key** refers to the input key that you want your program to be looking for (refer to the table below)
 
 * **Mask** refers to the key mask (not important, you can learn about this in the end)
 
-* **Function** refers to the function you want to call when the key is presed, **your function prototype should match the prototype of the corresponding key** (refer to the table below)
+* **Function** refers to the function you want to call when the key is pressed, **your function prototype should match the prototype of the corresponding key** (refer to the table below)
 
 * **Parameter** is the parameter you will be passing to the **Function** that is called.
 
@@ -127,17 +127,17 @@ If you notice the prototype column in the table below, the ***param** is the sam
 |5| Mouse Release |int (*f)(int button, int x, int y, void *param)|
 |6| Moving Mouse |int (*f)(int x, int y, void *param)|
 
-This table is a mini version of the one you see on MinilibX, these are the onces that are good to start with and then you can progress with more advance keys depending on your project
+This table is a mini version of the one you see on MinilibX, these are the ones that are good to start with and then you can progress with more advanced keys depending on your project
 
 ### Examples
 
 #### Quitting the program
 
-This example elaborates how you can integrate **ESC** to quit your program 
+This example elaborates on how you can integrate **ESC** to quit your program 
 
-Header defines the keycode that your function will be looking for to quit the game
+The header defines the keycode that your function will be looking for to quit the game
 
-Its important to use a struct that has all the variables that you use in your program as you can only pass one parameter through your functions
+It's important to use a struct that has all the variables that you use in your program as you can only pass one parameter through your functions
 
 
     #define ESC = 53     (Defining the keycode of ESC)
@@ -148,11 +148,11 @@ Its important to use a struct that has all the variables that you use in your pr
     }t_vars;
 _________________________________________________
 
-The main function starts with intializing mlx and a window, we set the **mlx_hook()** to look for buttons pressed by passsing the key as **2** (refer the event table) and mask 0 as we won't be needing that
+The main function starts with initializing mlx and a window, we set the **mlx_hook()** to look for buttons pressed by passing the key as **2** (refer to the event table) and mask 0 as we won't be needing that
 
 We pass the **quit()** function as per the **prototype** (refer event table) with the parameter as **vars**
 
-Its very important to dynamically allocate memory using **malloc** and initializing all your variables regardless of memory allocation as you are working with **structs** and **lists**, you'll learn about it as we go ahead
+It's very important to dynamically allocate memory using **malloc** and initializing all your variables regardless of memory allocation as you are working with **structs** and **lists**, you'll learn about it as we go ahead
 
 
     
@@ -189,10 +189,10 @@ The above code should stop the program and exit whenever **ESC** is pressed
 
 #### Moving box using keys
 
-Remeber how we created a square box using **mlx_pixel_put()**, lets move the box using the same logic of keys
+Remember how we created a square box using **mlx_pixel_put()**, lets move the box using the same logic of keys
 
 
-Let add some more variables for the position of our square into our struct, and define some more macros for movement buttons
+Let's add some more variables for the position of our square into our struct, and define some more macros for movement buttons
 
     #define ESC     53
     #define W       13
@@ -208,7 +208,7 @@ Let add some more variables for the position of our square into our struct, and 
     }t_vars;
 ___
 
-Lets use use the render function for square, but this time with **x + vars->box_x** and **y + vars->box_y** in x and y for **mlx_pixel_put()**
+Let's use the render function for square, but this time with **x + vars->box_x** and **y + vars->box_y** in x and y for **mlx_pixel_put()**
 
     int render_square(t_vars *vars)
     {
@@ -232,7 +232,7 @@ Lets use use the render function for square, but this time with **x + vars->box_
 
 ___
 
-Lets change our quit function to keys function and add movement keys to it too, everytime you press any movement keys, it changes its position by 10 pixels
+Let's change our quit function to a keys function and add movement keys to it too, every time you press any movement keys, it changes its position by 10 pixels
 
     int keys(int keycode, t_vars *vars)
         {
@@ -276,21 +276,21 @@ We'll add **mlx_loop_hook()** for our render function, it will infinitely call o
 ___
 
 
-Now when you run your program you should be able to move the box, but you'll see a very weird result where the box leaves a trail, and it looks like you're just painting you screen 
+Now when you run your program you should be able to move the box, but you'll see a very weird result where the box leaves a trail, and it looks like you're just painting your screen 
 
 ![VISUAL_REPRESENTATION]()
 
-Infact what we want this
+In fact what we want this
 
 ![VISUAL_REPRESENTATION]()
 
 ### mlx_clear_window() & mlx_do_sync()
 
-To fix the trail effect, we simply use these two functions which literally do what they say
+To fix the trial effect, we simply use these two functions which literally do what they say
 
-**mlx_clear_window()** : Clears the window back to nothing, just a black screen.
+**mlx_clear_window()**: Clears the window back to nothing, just a black screen.
 
-**mlx_do_sync()** : Syncs all the new rendered pixels that are put after rendering, like a referesh button
+**mlx_do_sync()**: Syncs all the new rendered pixels that are put after rendering, like a refresh button
 
 Just adding **mlx_clear_window()** before we start to render the pixels and then **mlx_do_sync()** after we finish the render should fix it for us 
 
@@ -319,20 +319,20 @@ Just adding **mlx_clear_window()** before we start to render the pixels and then
 
 
 ### Concluding your first program
-Congratulations, you sucessfully have a functional mini game. Just with these concepts you can create a full fledge game like **Dino Wars**.
+Congratulations, you successfully have a functional mini-game. Just with these concepts, you can create a full-fledged game like **Dino Wars**.
 
-Furthermore in this guide I will be going through how working with your own textures and then how you can master animation
+Furthermore, in this guide, I will be going through how to work with your own textures and then how you can master animation
 
 **Some key points to remember from this exercise**
-* Its important to work with structures when it comes to MLX or Game as it gives you too much flexibility
+* It is important to work with structures when it comes to MLX or Game as it gives you too much flexibility
 
-* Keep track of each and every memory, initialize every variable in your structures, further on in this guide you will see how we will be connecting different structs and linked lists to each other, in this case its really important to start the habbit of this concept from the base itself
+* Keep track of each and every memory, and initialize every variable in your structures, further on in this guide you will see how we will be connecting different structs and linked lists to each other, in this case, its really important to start the habit of this concept from the base itself
 
 ## Understanding Textures & Sprites
 
-A key feature of a dope game is graphics, its really important to understand how graphics work and how you can use it to your advantage creatively and make **GAME OF THE YEAR!!!!!**
+A key feature of a dope game is graphics, it's really important to understand how graphics work and how you can use it to your advantage creatively and make **GAME OF THE YEAR!!!!!**
 
-**Textures** are basically images that you use for your game, **Sprites** are a set of textures which together when sequentially displayed look like a video or animation
+**Textures** are basically images that you use for your game, **Sprites** are a set of textures that together when sequentially displayed look like a video or animation
 
 | Texture | Sprite (set of textures) |
 | :----: | :----: |
@@ -342,7 +342,7 @@ A key feature of a dope game is graphics, its really important to understand how
 
 You can find textures online from websites such as [itch.io](https://www.itch.io), you can download textures that you like and then use softwares such as Photoshop or [Photopea](https://www.photopea.com/) (Free and Online alternative for Photoshop) to edit your textures 
 
-Ideally we would be going for creating PNGs so that we can use convert them to XPM later on and use in our game
+Ideally, we would be going for creating PNGs so that we can convert them to XPM later on and use them in our game
 
 #### Make sure your texture size does not have white spaces: 
 
@@ -350,39 +350,39 @@ Ideally we would be going for creating PNGs so that we can use convert them to X
 | :----: | :----: |
 |![VISUAL_REPRESENTATION]()|![VISUAL_REPRESENTATION]()|
 
-Its important to make sure that your texture size does not have extra white spaces as it will mess around with the hitbox/collision boundary of your object
+It's important to make sure that your texture size does not have extra white spaces as it will mess around with the hitbox/collision boundary of your object
 
-#### Proper organisation for Sprites
+#### Proper organization for Sprites
 
 | Right | Wrong |
 | :----: | :----: |
 |![VISUAL_REPRESENTATION]()|![VISUAL_REPRESENTATION]()|
 
-When creating sprites its important that each of your textures are aligned and organised properly with numbering starting from 0
+When creating sprites it is important that each of your textures is aligned and organised properly with numbering starting from 0
 
-I personally organise it as **/player_idle_r/0.png** 
+I personally organize it as **/player_idle_r/0.png** 
 
-This might look intimidating and time consuming but its very important, its better to do it the right way or not do it at all
+This might look intimidating and time-consuming but it is very important, better to do it the right way or not do it at all
 
 #### Preparing your textures for MLX
 
-MLX takes in **PNG** as well as **XPM** as input format for texture input. However, using PNG is unstable in MiniLibX, so we convert out textures from PNG to XPM. Use [ImageMagick](https://imagemagick.org/index.php) for this, its an opensource and perfect tool for this project
+MLX takes in **PNG** as well as **XPM** as input format for texture input. However, using PNG is unstable in MiniLibX, so we convert out textures from PNG to XPM. Use [ImageMagick](https://imagemagick.org/index.php) for this, it is an opensource and perfect tool for this project
 ## Importing and Rendering Textures in MLX
 
-Now that you have prepared your texture in **XPM** format for MLX, lets go ahead and import it to your program and then render it in your window 
+Now that you have prepared your texture in **XPM** format for MLX, let's go ahead and import it to your program and then render it in your window 
 
 
 ### Program 2.0
 
 We add another **struct** and link it to our **main struct**, you'll see further why we link it to the main struct
 
-**void** ***img** : is the pointer to image which is passed to render on the screen
+**void** ***img**: is the pointer to the image that is passed to render on the screen
 
-**int w & int h** : refers to the  width and height of the image that we pass. This is used to calulate the hit box or collision boundry of your objects
+**int w & int h**: refers to the  width and height of the image that we pass. This is used to calculate the hitbox or collision boundary of your objects
 
-**int x & int y** : refers to the x and y position of the object that you will be working width
+**int x & int y**: refers to the x and y position of the object that you will be working on width
 
-**struct s_obj** ***next** : is a linked list for linking your sprite and animating 
+**struct s_obj** ***next**: is a linked list for linking your sprite and animating 
 
     #define ESC     53
     #define W       13
@@ -470,35 +470,35 @@ We change our function to **render_car** and use the ***img** along with the **X
 
 ## Collisions and Hit Boxes
 
-Now that you are sucessfully able to put an object inside your game and control it, its time to understand how you can make it interact with other objects inside your game
+Now that you are successfully able to put an object inside your game and control it, it is time to understand how you can make it interact with other objects inside your game
 
 ### Understanding your resources
 
 The object struct that we created has everything you need to make it interact with other things
 
-Lets assume we have two objects **Car** and **Wall** and you don't want the car to move right through the Wall
+Let's assume we have two objects **Car** and **Wall** and you don't want the car to move right through the Wall
 ![VISUAL REPRESENTATION]()
 
 
-You have to calculate that the next move is only valid if the Car does not overlap with Wall
+You have to calculate that the next move is only valid if the Car does not overlap with the Wall
 
 | Valid | Not Valid |
 | :----: | :----: |
 |![VISUAL_REPRESENTATION]()|![VISUAL_REPRESENTATION]()|
 
-To calculate need to see that the start and the end of the **Car** i.e **car->x** and **car->x + car->w** does not fall under the range of **wall->x** and **wall->x + wall->w**. 
+To calculate need to see that the start and the end of the **Car** i.e **car->x** and **car->x + car->w** do not fall under the range of **wall->x** and **wall->x + wall->w**. 
 
 **BUT** the above condition should only be valid when **car->y** and **car->y + car->h** doe not fall in the range of **wall->y and wall->y + wall->h**
 
 ![VISUAL_REPRESENTATION]()
 
-This was a simple way of how just using these 4 variables you can control any collision, event or automated movements
+This was a simple way of how just using these 4 variables you can control any collision, event, or automated movements
 
 ### Tips and tricks 
 
-* Refer to **lim()**, **wall_bound()** and similar functions in **/src** to see how you can efficiently with same pattern handel different types of interactions between objects
+* Refer to **lim()**, **wall_bound()**, and similar functions in **/src** to see how you can efficiently with the same pattern handle different types of interactions between objects
 
-* I have created a seperate struct in my game which runs through a function and returns the boundaries that needs to be calulated 
+* I have created a separate struct in my game which runs through a function and returns the boundaries that need to be calculated 
 
 
 This is how it looks
@@ -513,18 +513,18 @@ This is how it looks
 	    int	max; \\ Inverted m_max [Constant Max]
     }t_box;
 
-The **m_** is for the axis that is moving, everything in that will be corelated. If the moving axis is **X** then we go for the **W**, similarly if **Y** we go for **H**
+The **m_** is for the axis that is moving, everything in that will be correlated. If the moving axis is **X** then we go for the **W**, similarly if **Y** we go for **H**
 
-Inverted is the other axis which will be constant. This is quite a complicated algorithm that I came up with, try coming up with your own efficient way, that way you would be able to have full control over everything
+Inverted is the other axis which will be constant. This is quite a complicated algorithm that I came up with, try coming up with your own efficient way, that way you will be able to have full control over everything
 
 
 ## Animation
 
-Now comes the part which makes your game look alive, animation is fairly a very easy concept but can be very tricky
+Now comes the part that makes your game look alive, animation is fairly a easy concept but can be very tricky
 
-Lets say your sprite has 4 textures, you load the animation to a linked list which has all the texture on individual nodes linked ending at **NULL**
+Let's say your sprite has 4 textures, you load the animation to a linked list which has all the textures on individual nodes linked ending at **NULL**
 
-Everytime you call **mlx_put_image_to_window()** you just keep returning the next node's image and it keeps the animation hapenning
+Every time you call **mlx_put_image_to_window()** you just keep returning the next node's image and it keeps the animation hapenning
 
 You will have to use **usleep()** in order to give a slight delay in between every animated frame to make the animation visible 
 
@@ -564,12 +564,12 @@ You will have to use **usleep()** in order to give a slight delay in between eve
     }
 
 
-Now everytime you render this in **mlx_loop_hook()** it will give you a new and different animation
+Now every time you render this in **mlx_loop_hook()** it will give you a new and different animation
 
 ## Conclusion
 
-This guide should get you ready to produce a perfectly fine game, take your time, enjoy the project and push your creative limits !!!
+This guide should get you ready to produce a perfectly fine game, take your time, enjoy the project, and push your creative limits !!!
 
-You can reach out to me if you need any help on zvakil@student.42abudhabi.ae
+You can reach out to me if you need any help at zvakil@student.42abudhabi.ae
 
 Thank you for going through the guide, don't forget to give it a star if you liked it! and All the best with your project!
