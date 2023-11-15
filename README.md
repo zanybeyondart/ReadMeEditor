@@ -8,9 +8,9 @@ Its purpose is to make you work with textures, sprites,
 and some other very basic gameplay elements.
 ### Gameplay and Graphics
 
-![GAMEPLAY]()(https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd
+![GAMEPLAY]()(https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd)
 
-![ezgif com-video-to-gif](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/4384493e-fee9-4787-9a2a-91a0ba3a86a2))
+![ezgif com-video-to-gif](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/4384493e-fee9-4787-9a2a-91a0ba3a86a2)
 
 ### Game Logic
 ![VISUAL_REPRESENTATION]()
@@ -60,7 +60,7 @@ This project will give you a very simple and easy idea about how you render imag
 
 The MLX window assigns the position of each pixel using the X and Y positions starting from the top left corner
 
-![VISUAL_REPRESENTATION]()
+![ACCESSING_PIXELS](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/d27d2864-e593-43fe-9bd7-a8ceac5a68b8)
 
 
     void render_square(void)
@@ -84,8 +84,7 @@ The MLX window assigns the position of each pixel using the X and Y positions st
 
 The above code simply goes through a loop and renders 1 pixel every time with different X and Y positions, resulting in a simple square in your Window 
 
-![ACCESSING_PIXELS](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/d27d2864-e593-43fe-9bd7-a8ceac5a68b8)
-
+![Render_Square](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/7b7512d9-6dfe-4ae4-8caa-9bfe489ff486)
 
 
 Now that you're aware of how you have access to each and every pixel in your window let's go ahead and see how you can interact with your window
@@ -284,11 +283,13 @@ ___
 
 Now when you run your program you should be able to move the box, but you'll see a very weird result where the box leaves a trail, and it looks like you're just painting your screen 
 
-![VISUAL_REPRESENTATION]()
+![TRAIL PROBLEM](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/7b1a61ab-f6ad-42b5-83f5-9dffd9ea9b2b)
+
 
 In fact what we want this
 
-![VISUAL_REPRESENTATION]()
+![FIXED](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/fb0e8f44-2364-425c-8e7a-799656909403)
+
 
 ### mlx_clear_window() & mlx_do_sync()
 
@@ -342,7 +343,8 @@ A key feature of a dope game is graphics, it's really important to understand ho
 
 | Texture | Sprite (set of textures) |
 | :----: | :----: |
-|![VISUAL_REPRESENTATION]()|![VISUAL_REPRESENTATION]()|
+|![0](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/aa3599af-4023-4c67-9769-5812681a79d8)
+|![VISUAL_REPRESENTATION]()|
 
 ### How to create perfect textures and Sprites?
 
