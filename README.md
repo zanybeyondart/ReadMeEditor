@@ -355,9 +355,7 @@ Ideally, we would be going for creating PNGs so that we can convert them to XPM 
 
 | Right | Wrong |
 | :----: | :----: |
-|<img width="414" alt="Screenshot_1" src="https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/3a2677db-5ce7-4007-9f78-94f67399bded">
-|<img width="516" alt="Screenshot_2" src="https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/0ce2d99b-0757-476d-8f21-b3b4aa74d7b5">
-|
+|<img width="200" alt="Screenshot_1" src="https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/3a2677db-5ce7-4007-9f78-94f67399bded">|<img width="200" alt="Screenshot_2" src="https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/0ce2d99b-0757-476d-8f21-b3b4aa74d7b5">|
 
 It's important to make sure that your texture size does not have extra white spaces as it will mess around with the hitbox/collision boundary of your object
 
