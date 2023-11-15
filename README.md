@@ -343,10 +343,7 @@ A key feature of a dope game is graphics, it's really important to understand ho
 
 | Texture | Sprite (set of textures) |
 | :----: | :----: |
-|![2](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/3bdb48af-2571-4d70-a891-9799a5db90b9)
-
-|![ALL](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/672db2c1-0039-429c-8840-59e638d5c617)
-|
+|![2](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/3bdb48af-2571-4d70-a891-9799a5db90b9) | ![ALL](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/672db2c1-0039-429c-8840-59e638d5c617)|
 
 ### How to create perfect textures and Sprites?
 
