@@ -8,7 +8,7 @@ Its purpose is to make you work with textures, sprites,
 and some other very basic gameplay elements.
 ### Gameplay and Graphics
 
-![GAMEPLAY](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd)
+https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd
 
 ![ezgif com-video-to-gif](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/4384493e-fee9-4787-9a2a-91a0ba3a86a2)
 
