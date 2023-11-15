@@ -8,7 +8,7 @@ Its purpose is to make you work with textures, sprites,
 and some other very basic gameplay elements.
 ### Gameplay and Graphics
 
-![GAMEPLAY]()(https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd)
+![GAMEPLAY](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd)
 
 ![ezgif com-video-to-gif](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/4384493e-fee9-4787-9a2a-91a0ba3a86a2)
 
@@ -343,8 +343,10 @@ A key feature of a dope game is graphics, it's really important to understand ho
 
 | Texture | Sprite (set of textures) |
 | :----: | :----: |
-|![0](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/aa3599af-4023-4c67-9769-5812681a79d8)
-|![VISUAL_REPRESENTATION]()|
+|![2](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/3bdb48af-2571-4d70-a891-9799a5db90b9)
+
+|![ALL](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/672db2c1-0039-429c-8840-59e638d5c617)
+|
 
 ### How to create perfect textures and Sprites?
 
@@ -356,17 +358,15 @@ Ideally, we would be going for creating PNGs so that we can convert them to XPM 
 
 | Right | Wrong |
 | :----: | :----: |
-|![VISUAL_REPRESENTATION]()|![VISUAL_REPRESENTATION]()|
+|<img width="414" alt="Screenshot_1" src="https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/3a2677db-5ce7-4007-9f78-94f67399bded">
+|<img width="516" alt="Screenshot_2" src="https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/0ce2d99b-0757-476d-8f21-b3b4aa74d7b5">
+|
 
 It's important to make sure that your texture size does not have extra white spaces as it will mess around with the hitbox/collision boundary of your object
 
 #### Proper organization for Sprites
 
-| Right | Wrong |
-| :----: | :----: |
-|![VISUAL_REPRESENTATION]()|![VISUAL_REPRESENTATION]()|
-
-When creating sprites it is important that each of your textures is aligned and organised properly with numbering starting from 0
+When creating sprites it is important that each of your textures is aligned and organized properly with numbering starting from 0
 
 I personally organize it as **/player_idle_r/0.png** 
 
@@ -374,7 +374,7 @@ This might look intimidating and time-consuming but it is very important, better
 
 #### Preparing your textures for MLX
 
-MLX takes in **PNG** as well as **XPM** as input format for texture input. However, using PNG is unstable in MiniLibX, so we convert out textures from PNG to XPM. Use [ImageMagick](https://imagemagick.org/index.php) for this, it is an opensource and perfect tool for this project
+MLX takes in **PNG** as well as **XPM** as input format for texture input. However, using PNG is unstable in MiniLibX, so we convert out textures from PNG to XPM. Use [ImageMagick](https://imagemagick.org/index.php) for this, it is a opensource and perfect tool for this project
 ## Importing and Rendering Textures in MLX
 
 Now that you have prepared your texture in **XPM** format for MLX, let's go ahead and import it to your program and then render it in your window 
@@ -485,20 +485,18 @@ Now that you are successfully able to put an object inside your game and control
 The object struct that we created has everything you need to make it interact with other things
 
 Let's assume we have two objects **Car** and **Wall** and you don't want the car to move right through the Wall
-![VISUAL REPRESENTATION]()
+
+![ezgif com-video-to-gif (7)](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/98d3c6a0-1e9d-489a-9e19-e522a037203b)
 
 
 You have to calculate that the next move is only valid if the Car does not overlap with the Wall
 
-| Valid | Not Valid |
-| :----: | :----: |
-|![VISUAL_REPRESENTATION]()|![VISUAL_REPRESENTATION]()|
-
 To calculate need to see that the start and the end of the **Car** i.e **car->x** and **car->x + car->w** do not fall under the range of **wall->x** and **wall->x + wall->w**. 
 
-**BUT** the above condition should only be valid when **car->y** and **car->y + car->h** doe not fall in the range of **wall->y and wall->y + wall->h**
+**BUT** the above condition should only be valid when **car->y** and **car->y + car->h** does not fall in the range of **wall->y and wall->y + wall->h**
 
-![VISUAL_REPRESENTATION]()
+![variables](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/e7ea41f0-f928-4a3c-b232-499a8806eeb7)
+
 
 This was a simple way of how just using these 4 variables you can control any collision, event, or automated movements
 
@@ -532,7 +530,7 @@ Now comes the part that makes your game look alive, animation is fairly a easy c
 
 Let's say your sprite has 4 textures, you load the animation to a linked list which has all the textures on individual nodes linked ending at **NULL**
 
-Every time you call **mlx_put_image_to_window()** you just keep returning the next node's image and it keeps the animation hapenning
+Every time you call **mlx_put_image_to_window()** you just keep returning the next node's image and it keeps the animation happening
 
 You will have to use **usleep()** in order to give a slight delay in between every animated frame to make the animation visible 
 
