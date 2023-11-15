@@ -8,11 +8,10 @@ Its purpose is to make you work with textures, sprites,
 and some other very basic gameplay elements.
 ### Gameplay and Graphics
 
-[![VISUAL_REPRESENTATION]()
-](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd
-
+![GAMEPLAY]()(https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd
 
 ![ezgif com-video-to-gif](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/4384493e-fee9-4787-9a2a-91a0ba3a86a2))
+
 ### Game Logic
 ![VISUAL_REPRESENTATION]()
 
@@ -85,7 +84,9 @@ The MLX window assigns the position of each pixel using the X and Y positions st
 
 The above code simply goes through a loop and renders 1 pixel every time with different X and Y positions, resulting in a simple square in your Window 
 
-![VISUAL_REPRESENTATION]()
+![ACCESSING_PIXELS](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/d27d2864-e593-43fe-9bd7-a8ceac5a68b8)
+
+
 
 Now that you're aware of how you have access to each and every pixel in your window let's go ahead and see how you can interact with your window
 
