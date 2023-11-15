@@ -1,17 +1,22 @@
 
-![DINO WARS](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![DINO WARS](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/c7f8cbe5-66b0-41c0-8a3e-ed38c4e23a23)
 
 
 # Dino Wars
 Dino Wars is a game produced by me for my So_Long project at 42, Abu Dhabi. This project is a very small 2D game.
 Its purpose is to make you work with textures, sprites,
 and some other very basic gameplay elements.
-### Gameplay
+### Gameplay and Graphics
 
-![VISUAL_REPRESENTATION]()
+[![VISUAL_REPRESENTATION]()
+](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/865f49e6-871e-4500-aafb-df2e4c83bfdd
 
+
+![ezgif com-video-to-gif](https://github.com/zanybeyondart/ReadMeEditor/assets/124681155/4384493e-fee9-4787-9a2a-91a0ba3a86a2))
 ### Game Logic
 ![VISUAL_REPRESENTATION]()
+
+
 
 ### Updates and Development
 
